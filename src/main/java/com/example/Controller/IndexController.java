@@ -13,5 +13,11 @@ public class IndexController {
     public @ResponseBody String index() {
         return "Hello, Spring Boot!";
     }
+
+    @GetMapping("/fire")
+    public String fire() {
+        return "views/fire";
+    }
+
 }
 
